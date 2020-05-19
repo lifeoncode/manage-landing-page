@@ -687,50 +687,7 @@ form button:hover{
     }
 
 
-    .testimonials_inner{
-        margin-top: 6rem;
-        display: block;
-        width: 80%;
-        margin: auto;
-    }
-    
-    #anisha, #ali, #richard{
-        display: none;
-    }
-    
-    .testimonials_inner > div img{
-        top: -100px;
-    }
-    
-    .slider_btns{
-        text-align: center;
-    }
-    .one,
-    .two,
-    .three,
-    .four{
-        display: inline;
-        border: 2px solid var(--bright-red);
-        height: 10px;
-        width: 10px;
-        border-radius: 50%;
-        background-color: transparent;
-        margin: 0 0.5rem;
-        transition: all 0.3s ease;
-    }
-    .one:focus,
-    .two:focus,
-    .three:focus,
-    .four:focus{
-        background-color: var(--bright-red);
-    }
-    .one:active,
-    .two:active,
-    .three:active,
-    .four:active{
-        background-color: var(--bright-red);
-    }
-    
+
     
 
     .bottom_overlay{
