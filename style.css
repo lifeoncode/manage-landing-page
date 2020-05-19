@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+
+
+*, *::after{
+    box-sizing: border-box;
+    scroll-behavior: smooth !important;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+:root{
+    --bright-red: hsl(12, 88%, 59%);
+    --dark-blue: hsl(228, 39%, 23%);
+    --secondary-gray-blue: hsl(227, 12%, 61%);
+    --secondary-dark-blue: hsl(233, 12%, 13%);
+    --pale-red: hsl(13, 100%, 96%);
+    --light-gray: hsl(0, 0%, 98%);
+}
+
+
+/* universal */
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+button:focus, input:focus{
+    outline: none;
+}
+
+
+
+
+/* body */
+body{
+    position: relative;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+
+/* header */
