@@ -269,6 +269,7 @@ header button:hover{
 
 #testimonials a{
     display: inline-block;
+    margin-top: 4rem;
     padding: 1rem 3rem;
     color: var(--light-gray);
     background-color: var(--bright-red);
@@ -287,9 +288,6 @@ header button:hover{
     padding: 6rem 0 0 0;
 }
 
-.slider_btns{
-    padding: 4rem 0;
-}
 
 .testimonials_inner > div{
     position: relative;
@@ -318,6 +316,26 @@ header button:hover{
     line-height: 1.4;
     color: var(--secondary-gray-blue);
 }
+
+.slider_btns{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one,
+.two,
+.three,
+.four{
+    display: none;
+}
+
+
+
+
+
+
 
 
 
@@ -392,12 +410,10 @@ header button:hover{
 
 
 
-.one,
-.two,
-.three,
-.four{
-    display: none;
-}
+
+
+
+
 
 
 
@@ -543,6 +559,30 @@ form button:hover{
     display: none;
 }
 
+.current{
+    background-color: var(--bright-red);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -638,6 +678,45 @@ form button:hover{
     
 
 
+
+    /* -------- */
+    .testimonials_inner{
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+    #ali, 
+    #richard,
+    #shanai{
+        display: none;
+    }
+
+
+    .testimonials_inner > div img{
+        top: -50px;
+        left: 35%;
+        width: 30%;
+    }
+
+
+    #one,
+    #two, 
+    #three,
+    #four{
+        display: block;
+        height: 20px;
+        width: 20px;
+        border: 2px solid var(--bright-red);
+        margin: 0 1rem;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+
+    /* ----------------- */
+    
+    
+    
 
     .body_overlay{
         position: fixed;
@@ -762,6 +841,20 @@ form button:hover{
     #showcase img{
         width: 100%;
     }
+
+
+    #one,
+    #two, 
+    #three,
+    #four{
+        height: 15px;
+        width: 15px;
+    }
+
+    .testimonials_inner{
+        width: 100%;
+    }
+    
 
 
     .showcase_inner .text{

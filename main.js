@@ -97,11 +97,69 @@ function init(e){
 
 
 
-        // slides
-        const [one, two, three, four] = [document.querySelector('#anisha'), document.querySelector('#ali'), document.querySelector('#richard'), document.querySelector('#shanai')]
-        
+    // slides
+    const [anisha, ali, richard, shanai] = [document.querySelector('#anisha'), document.querySelector('#ali'), document.querySelector('#richard'), document.querySelector('#shanai')]
+// div collection
+    const [...slides] = [anisha, ali, richard, shanai];
 
-        // event
-       
+    
+    const [one, two, three, four] = [document.querySelector('#one'), document.querySelector('#two'), document.querySelector('#three'), document.querySelector('#four')];
+// btn colection
+    const [...btns] = [one, two, three, four];
+    
+    // event
+    one.addEventListener('click', activate);
+    one.addEventListener('click', testOne);
+    two.addEventListener('click', activate);
+    two.addEventListener('click', testTwo);
+    three.addEventListener('click', activate);
+    three.addEventListener('click', testThree);
+    four.addEventListener('click', activate);
+    four.addEventListener('click', testFour);
+
+    function activate(e){
+        btns.forEach(btn => {
+            btn.classList.remove('current');
+        })
+        
+        this.classList.add('current');
+    }
+
+
+
+    function testOne(e){
+        slides.forEach(slide => {
+            slide.style.display = 'none';
+        })
+
+        anisha.style.display = 'block';
+    }
+
+
+    function testTwo(e){
+        slides.forEach(slide => {
+            slide.style.display = 'none';
+        })
+
+        ali.style.display = 'block';
+    }
+
+
+    function testThree(e){
+        slides.forEach(slide => {
+            slide.style.display = 'none';
+        })
+
+        richard.style.display = 'block';
+    }
+
+
+    function testFour(e){
+        slides.forEach(slide => {
+            slide.style.display = 'none';
+        })
+
+        shanai.style.display = 'block';
+    }
     
 }
