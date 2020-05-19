@@ -93,5 +93,15 @@ function init(e){
             }, 400);
         }
     
+
+
+
+
+        // slides
+        const [one, two, three, four] = [document.querySelector('#anisha'), document.querySelector('#ali'), document.querySelector('#richard'), document.querySelector('#shanai')]
+        
+
+        // event
+       
     
 }

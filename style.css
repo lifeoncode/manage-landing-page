@@ -284,7 +284,11 @@ header button:hover{
 .testimonials_inner{
     display: flex;
     flex-direction: row;
-    padding: 6rem 0;
+    padding: 6rem 0 0 0;
+}
+
+.slider_btns{
+    padding: 4rem 0;
 }
 
 .testimonials_inner > div{
@@ -314,6 +318,8 @@ header button:hover{
     line-height: 1.4;
     color: var(--secondary-gray-blue);
 }
+
+
 
 
 
@@ -386,7 +392,12 @@ header button:hover{
 
 
 
-
+.one,
+.two,
+.three,
+.four{
+    display: none;
+}
 
 
 
@@ -674,6 +685,53 @@ form button:hover{
     .about_inner .text{
         padding: 0;
     }
+
+
+    .testimonials_inner{
+        margin-top: 6rem;
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+    
+    #anisha, #ali, #richard{
+        display: none;
+    }
+    
+    .testimonials_inner > div img{
+        top: -100px;
+    }
+    
+    .slider_btns{
+        text-align: center;
+    }
+    .one,
+    .two,
+    .three,
+    .four{
+        display: inline;
+        border: 2px solid var(--bright-red);
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: transparent;
+        margin: 0 0.5rem;
+        transition: all 0.3s ease;
+    }
+    .one:focus,
+    .two:focus,
+    .three:focus,
+    .four:focus{
+        background-color: var(--bright-red);
+    }
+    .one:active,
+    .two:active,
+    .three:active,
+    .four:active{
+        background-color: var(--bright-red);
+    }
+    
+    
 
     .bottom_overlay{
         width: 60%;
