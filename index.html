@@ -10,6 +10,8 @@
 
 <body>
 
+  <div class="body_overlay hide"></div>
+
   <img src="./images/bg-tablet-pattern.svg" alt="" class="top_overlay">
 
   <header>
@@ -32,7 +34,30 @@
       </div>
     </div>
 
+    <img src="./images/icon-hamburger.svg" alt="" id="menu-btn">
+    <img src="./images/icon-close.svg" id="close" class="hide" alt="">
   </header>
+
+
+
+
+
+
+
+
+
+
+  <div id="menu" class="hide">
+    <ul>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Community</a></li>
+    </ul>
+  </div>
+
+
 
 
 
@@ -194,6 +219,10 @@
 
 
   <div id="bottom">
+
+  <img src="./images/bg-tablet-pattern-2.svg" alt="" class="top">
+  <img src="./images/bg-tablet-pattern-2.svg" alt="" class="bottom">
+
     <div class="bottom_inner container">
       <div>
         <h2>Simplify how your team works today.</h2>
@@ -217,7 +246,7 @@
 
     <div class="footer_inner container">
       <div class="home">
-        <div class="logo"><img src="./images/logo-footer.svg" alt=""></div>
+        <div class="logo"><a href="./index.html"><img src="./images/logo-footer.svg" alt=""></a></div>
         <ul>
           <li><img src="./images/icon-facebook.svg" alt=""></li>
           <li><img src="./images/icon-youtube.svg" alt=""></li>
@@ -240,16 +269,17 @@
       
       <div class="links">
         <ul>
-          <li>Home</li>
-          <li>Pricing</li>
-          <li>Products</li>
-          <li>About us</li>
+          <li>Careers</li>
+          <li>Community</li>
+          <li>Privacy Policy</li>
         </ul>
       </div>
 
-      <form action="#" method="POST" name="signup form">
+      <form action="#" method="POST" name="signup form" autocomplete="off">
         <input type="email" placeholder="Updates in your inbox" name="email">
+        <span class="error"></span>
         <button type="submit" name="submit">Go</button>
+
 
         <p>&COPY; Copyright 2020. All Rights Reserved</p>
       </form>
@@ -259,37 +289,6 @@
 
   
 
- 
-
-  
-  
-
-
-  
-
-
-  
-
-  Simplify how your team works today.
-  Get Started
-
-  Home
-  Pricing
-  Products
-  About Us
-  Careers
-  Community
-  Privacy Policy
-
-  Updates in your inbox…
-  Go
-
-  Copyright 2020. All Rights Reserved
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+ <script src="./main.js" defer></script>
 </body>
 </html>
