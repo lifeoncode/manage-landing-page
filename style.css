@@ -999,6 +999,12 @@ form button:hover{
         width: 90%;
     }
     .testimonials_inner{
-        width: 90%;
+        width: 100%;
+    }
+
+    .testimonials_inner > div img{
+        top: -45px;
+        left: 38%;
+        width: 25%;
     }
 }
