@@ -1007,4 +1007,8 @@ form button:hover{
         left: 38%;
         width: 25%;
     }
+
+    .testimonials_inner > div{
+        box-shadow: 0 1px 3px #ddd;
+    }
 }
