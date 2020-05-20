@@ -37,7 +37,7 @@ function init(e){
 
 
         // menu
-        const [open, close, menu, overlay] = [document.querySelector('#menu-btn'), document.querySelector('#close'), document.querySelector('#menu'), document.querySelector('.body_overlay')];
+        const [open, close, menu, overlay] = [document.querySelector('.menu-btn'), document.querySelector('.close'), document.querySelector('.menu'), document.querySelector('.body_overlay')];
 
         open.addEventListener('click', function(e){
             this.classList.add('hide');
@@ -64,7 +64,7 @@ function init(e){
         // close menu
         close.addEventListener('click', hide);
     
-        const links = document.querySelectorAll('#menu a');
+        const links = document.querySelectorAll('.menu a');
     
         links.forEach(link => {
             link.addEventListener('click', hide);
@@ -98,12 +98,12 @@ function init(e){
 
 
     // slides
-    const [anisha, ali, richard, shanai] = [document.querySelector('#anisha'), document.querySelector('#ali'), document.querySelector('#richard'), document.querySelector('#shanai')]
+    const [anisha, ali, richard, shanai] = [document.querySelector('.anisha'), document.querySelector('.ali'), document.querySelector('.richard'), document.querySelector('.shanai')]
 // div collection
     const [...slides] = [anisha, ali, richard, shanai];
 
     
-    const [one, two, three, four] = [document.querySelector('#one'), document.querySelector('#two'), document.querySelector('#three'), document.querySelector('#four')];
+    const [one, two, three, four] = [document.querySelector('.one'), document.querySelector('.two'), document.querySelector('.three'), document.querySelector('.four')];
 // btn colection
     const [...btns] = [one, two, three, four];
     
